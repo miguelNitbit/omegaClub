@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/omegaClub/static/css/main.a3a661a6.css",
+    "main.js": "/omegaClub/static/js/main.7278d637.js",
+    "index.html": "/omegaClub/index.html",
+    "main.a3a661a6.css.map": "/omegaClub/static/css/main.a3a661a6.css.map",
+    "main.7278d637.js.map": "/omegaClub/static/js/main.7278d637.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3a661a6.css",
+    "static/js/main.7278d637.js"
+  ]
+}

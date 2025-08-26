@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+/* Variables CSS con colores exactos de omegaUp.org */
+:root {
+  --omegaup-primary: #004165;
+  --omegaup-secondary: #75AADB;
+  --omegaup-light: #f0f7ff;
+  --omegaup-accent: #0080c7;
+  --white: #FFFFFF;
+  --gray-light: #A9B2B1;
+  --gray-medium: #6c757d;
+  --dark-color: #333333;
+  --shadow-light: 0 2px 8px rgba(0, 65, 101, 0.1);
+  --shadow-medium: 0 4px 12px rgba(0, 65, 101, 0.15);
+  --border-radius: 8px;
+  --transition: all 0.2s ease;
+}
+
+/* Utilidades */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-2 { margin-bottom: 16px; }
+.mb-3 { margin-bottom: 24px; }
+.mb-4 { margin-bottom: 32px; }
+.mb-5 { margin-bottom: 48px; }
+
+/* Tipografía */
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: var(--omegaup-primary);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--omegaup-primary);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: var(--omegaup-primary);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--omegaup-primary);
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--gray-medium);
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--gray-medium);
+}
+
+/* Botones minimalistas */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  min-width: 180px;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--omegaup-primary);
+  color: white;
+  box-shadow: var(--shadow-light);
+}
+
+.btn-primary:hover {
+  background: var(--omegaup-secondary);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--omegaup-primary);
+  border: 2px solid var(--omegaup-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--omegaup-primary);
+  color: white;
+}
+
+/* Grids */
+.grid {
+  display: grid;
+  gap: 40px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Cards minimalistas */
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  border: 1px solid var(--omegaup-light);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-icon.primary {
+  background: var(--omegaup-primary);
+  color: white;
+}
+
+.card-icon.secondary {
+  background: var(--omegaup-secondary);
+  color: white;
+}
+
+.card-icon.accent {
+  background: var(--omegaup-accent);
+  color: white;
+}
+
+.card-icon.success {
+  background: #28a745;
+  color: white;
+}
+
+/* Backgrounds especiales */
+.bg-light {
+  background: linear-gradient(135deg, var(--omegaup-light) 0%, var(--white) 100%);
+}
+
+.bg-primary {
+  background: var(--omegaup-primary);
+  color: white;
+}
+
+/* Elementos destacados */
+.highlight {
+  color: var(--omegaup-accent);
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--omegaup-light);
+  color: var(--omegaup-primary);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Logo omegaUp estilizado */
+.omega-logo {
+  font-weight: 800;
+  color: var(--omegaup-primary);
+}
+
+.omega-logo .up {
+  color: var(--omegaup-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .btn {
+    padding: 14px 24px;
+    font-size: 1rem;
+    min-width: 180px;
+  }
+  
+  .card {
+    padding: 30px;
+  }
+  
+  .grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

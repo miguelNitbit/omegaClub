@@ -106,13 +106,12 @@ Una landing page completa y profesional para los **Clubes de Programación omega
 "Hola, me gustaría recibir más información sobre los Clubes de Programación omegaUp. ¿Podrían ayudarme?"
 ```
 
-**Nota:** El número de WhatsApp (+522721275751) está integrado en los enlaces pero no se muestra visiblemente en la página.
 
 ## 🚀 Instalación y Uso
 
 ```bash
 # Navegar al directorio
-cd "/Users/miguelromero/Documents/Clubes omegaUp Landing"
+
 
 # Instalar dependencias
 npm install
@@ -264,7 +263,6 @@ git push origin main
 
 ## ✨ Diferencias con la Versión Anterior
 
-- ❌ **Removida**: Sección de comparación entre modelo anterior vs nuevo
 - ✅ **Mantenido**: Toda la funcionalidad de WhatsApp
 - ✅ **Mantenido**: Video de YouTube específico integrado
 - ✅ **Mantenido**: Navegación completa y todas las secciones
